@@ -1,3 +1,7 @@
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,10 +15,18 @@ public class App {
     WebDriver driver = new ChromeDriver(); 
 
     try {
+
+        Thread.sleep(3000);
+
         driver.get("https://es.wikipedia.org/");
         WebElement cajaBusqueda =  driver.findElement(By.id("searchInput"));
         cajaBusqueda.sendKeys("Selenium");
         System.out.println(driver.getTitle());
+        driver.findElement(By.id("n-portal")).click();
+
+        WebElement tituloPagina =  driver.findElement(By.id("firstHeading"));
+        System.out.println(tituloPagina.getText());
+        assertEquals("Portal:Comunidad", tituloPagina.getText());
 
         Thread.sleep(3000);
     } catch (InterruptedException e) {
@@ -25,4 +37,8 @@ public class App {
     driver.quit();
 }
 
+@Test
+public void test_wikiRandom(){
+    
+}
 }
