@@ -5,10 +5,12 @@
 Este repositorio ofrece un proyecto simple para empezar a trabajar con Selenium y Junit. 
 Debéis hacer las modificaciones necesarias para adaptar las pruebas a la página que seleccionasteis. Una vez que terminéis debéis subir todo vuestro código al repo. 
 
-Para este ejercicio tenéis que elegir al menos 5 casos de prueba de los que hayáis definido
-en la primera práctica de esta unidad, y ejecutarlos haciendo uso de Selenium y JUnit.
-El objetivo de estas pruebas es romper la página, es decir, encontrar errores en la misma, si
-es posible, claro está.
+Partiendo del fichero de index.html realizar las siguientes pruebas en selenium:  
+
+1. Enviar el formulario completando el user y la password únicamente. 
+2. Hacer click en "Check me out" y hacer click en "Confirm". 
+3. Seleccionar del select la opción "Dos" con el index. 
+4. Seleccionar del select la opción "uno" por el nombre. 
 
 
 ## Pre-requisitos

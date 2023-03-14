@@ -1,24 +1,27 @@
-<form action="procesar.html">
-    <p>Nombre: <input type="text" name="texto" placeholder="Nombre"></p>
-    <p>Escriba cantidad de pizzas: <input type="number" name="numero" step="any">
-    <br>
-    <input type="checkbox" name="pinha">Con Piña
-    <input type="checkbox" name="sin_pinha" value="hola">Sin Piña
-  
-    <p>Comentarios de la entrega:
-    <textarea name="texto" rows="3" cols="30"></textarea></p>
-
-    <input type="radio" name="boton" value="1">Masa Fina<br>
-    <input type="radio" name="boton" value="2">Masa Gruesa<br>
-    <input type="radio" name="boton" value="3">Clásica 
-    
-    <p>Menú:
-    <select name="menu" id="menu">
-        <option>Uno</option>
+<form action="prueba.html">
+    <div class="form-group mx-sm-3">
+        <label for="inputUser" class="sr-only">User</label>
+        <input type="password" class="form-control" id="inputUser" placeholder="User">
+    </div>
+    <div class="form-group mx-sm-3">
+        <label for="inputPass" class="sr-only">Password</label>
+        <input type="password" class="form-control" id="inputPass" placeholder="Pass">
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-2">Checkbox</div>
+        <div class="col-sm-10">
+          <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox"> Check me out
+        </label>
+          </div>
+        </div>
+      </div>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Abre este menú select</option>
+        <option value="1">Uno</option>
         <option value="2">Dos</option>
-        <option value="three">Tres</option>
+        <option value="3">Tres</option>
       </select>
-    <p><input type="reset" value="Borrar"></p>
-    <p><input type="submit" value="Enviar"></p>
-
-</form>
+    <button type="submit" class="btn btn-primary">Confirm</button>
+  </form>
